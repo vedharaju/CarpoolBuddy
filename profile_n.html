@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Carpool Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="profile.css" />
+    <link rel="stylesheet" type="text/css" href="navbar.css" />
+  </head>
+  
+  <body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	  <div class="container-fluid">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Carpool Buddy</a>
+		    </div>
+
+
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Groups</a></li>
+		        <li><a href="#">Calendar</a></li>
+                <li><a href="#">Forum</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Notifications  <span class="badge">42</span></a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Vedha Sayyaparaju <b class="caret"></b></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Profile</a></li>
+		            <li><a href="#">Settings</a></li>
+		            <li><a href="#">Help</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Logout</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+	  </div>
+	</nav>
+	<div id="content" class="clearfix">
+	<section id="left">
+		<div id = "userStats" class="clearfix">
+		<div class="pic">
+			<a href="#"> <img src="img/avatar.png" width="200" height="200"> </a>
+		</div>
+		<div class="data">
+<!-- 			<form>
+			Name: <input type="text" name="firstname"><br>
+			Address: <input type="text" name="lastname"><br>
+			Email: <input type="text" name="lastname"><br>
+			<input type="button" id="save" value="Submit Form" />
+
+			</form> -->
+			<h1 class="username">Ben Bittdiddle
+			 </h1>
+			 <h3 class = "userinfo">(336) 231-432</h3>
+			 <h3 class = "userinfo">320 Memorial Dr Cambridge, MA 02139 </h3>
+			 <h3 class = "userinfo"> ben@gmail.com </h3>
+			
+			<div class= "updateButton">
+				<a class="edit-button" href="#update_form" id="update_pop"> Update </a>
+			</div>
+		</div>
+		<div class="children">
+		<h1 class= "childrenTitle"> Your Children: </h1>
+		<div class="child" id="childa">
+		<h2 class="childName"> Rolly Poly </h2>
+		<a class="delete-button" href="update"> Remove Child </a> 
+		<div class="sep"></div> 
+
+		<h3 class ="userinfo"> Bitdiddle High School </h3>
+		<h3 class= "userinfo">Sex : 	Female </h3>
+		<h3 class="userinfo">Grade : 9th </h3>
+
+		</div>
+		<div class="addChildWrapper">
+		<a href="#add_form" class="AddChild" id="addChild">Add Child</a>
+	</div>
+	</div>
+
+        <!-- popup form #1 -->
+        <a href="#x" class="overlay" class="AddChild" id="add_form"></a>
+        <div class="popup">
+            <div class="username">Add Your Child</div>
+            <p>Please enter school and child's passcode here</p>
+            <div class="forminput">
+                <label for="school">School</label>
+                <input type="text" id="school" value="" />
+            </div>
+            <div class ="forminput2">
+                <label for="Your Child's Code">Passcode</label>
+                <input type="text" id="code" value="" />
+            </div>
+            <div class="addWrapper">
+            <a href="#close" id="add" class="AddChild" > Add </a>
+        </div>
+            <div class="warningwrapper">
+            <div class="warning">If you do not know your child's passcode please see a</div> 
+             <div class="warning">school administrator</div>
+         </div>
+
+
+            <a class="close" href="#close"></a>
+        </div>
+        <a href="#x" class="overlay" id="update_form"></a>
+
+    <script type="text/javascript" src="external_js/jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+	$("#add").click(function(evt) {
+		$("#childa").css("display", "inline");
+});
+
+	</script>
+  </body>
+</html>
