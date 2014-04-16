@@ -1,4 +1,17 @@
-function getParams(name) {
+// $(document).ready(function(){
+// 	var param_obj = getParams();
+// 	console.log("param_obj", param_obj);
+// });
+
+$(".cancel_btn").click(function(){
+						window.location.href = "groups.html";
+					});
+
+$(".request_invite_btn").click(function(){
+	window.location.href = "groups.html";
+});
+
+function getParams() {
 	var params = {}; 
 	var parts = (window.location.search || '').split(/[&?]/); 
 	for (var i = 0; i < parts.length; i++) { 
