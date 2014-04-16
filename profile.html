@@ -2,18 +2,20 @@
 
 <html>
   <head>
-    <title>Carpool Buddy</title>
+    <title>Bootstrap 101 Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="navbar.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="profile.css" />
-    <link rel="stylesheet" type="text/css" href="navbar.css" />
+	<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Signika&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   </head>
-  
   <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	  <div class="container-fluid">
-	      <!-- Brand and toggle get grouped for better mobile display -->
+		<div class="container-fluid">
+		  <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 		        <span class="sr-only">Toggle navigation</span>
@@ -21,7 +23,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">Carpool Buddy</a>
+		      <a class="navbar-brand navbar_title" href="#">Carpool Buddy</a>
 		    </div>
 
 
@@ -29,25 +31,25 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Groups</a></li>
-		        <li><a href="#">Calendar</a></li>
-                <li><a href="#">Forum</a></li>
+		        <li class="active"><a class="navbar_option" href="#">Groups</a></li>
+		        <li><a class="navbar_option" href="#">Calendar</a></li>
+		        <li><a class="navbar_option" href="#">Forum</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Notifications  <span class="badge">42</span></a></li>
+		        <li><a class="navbar_option" href="#">Notifications  <span class="badge">42</span></a></li>
 		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Vedha Sayyaparaju <b class="caret"></b></a>
+		          <a  class="navbar_option"href="#" class="dropdown-toggle" data-toggle="dropdown">Vedha Sayyaparaju <b class="caret"></b></a>
 		          <ul class="dropdown-menu">
-		            <li><a href="#">Profile</a></li>
-		            <li><a href="#">Settings</a></li>
-		            <li><a href="#">Help</a></li>
+		            <li><a class="navbar_option" href="#">Profile</a></li>
+		            <li><a class="navbar_option" href="#">Settings</a></li>
+		            <li><a class="navbar_option" href="#">Help</a></li>
 		            <li class="divider"></li>
-		            <li><a href="#">Logout</a></li>
+		            <li><a class="navbar_option" href="#">Logout</a></li>
 		          </ul>
 		        </li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
-	  </div>
+		</div>
 	</nav>
 	<div id="content" class="clearfix">
 	<section id="left">
@@ -63,11 +65,11 @@
 			<input type="button" id="save" value="Submit Form" />
 
 			</form> -->
-			<h1 class="username">Ben Bittdiddle
+			<h1 class="username" id="username">Ben Bittdiddle
 			 </h1>
-			 <h3 class = "userinfo">(336) 231-432</h3>
-			 <h3 class = "userinfo">320 Memorial Dr Cambridge, MA 02139 </h3>
-			 <h3 class = "userinfo"> ben@gmail.com </h3>
+			 <h3 class = "userinfo" id="userphone">(336) 231-432</h3>
+			 <h3 class = "userinfo" id="useraddress">320 Memorial Dr Cambridge, MA 02139 </h3>
+			 <h3 class = "userinfo" id="useremail"> ben@gmail.com </h3>
 			
 			<div class= "updateButton">
 				<a class="edit-button" href="#update_form" id="update_pop"> Update </a>
@@ -86,7 +88,7 @@
 
 		</div>
 		<div class="addChildWrapper">
-		<a href="#add_form" class="AddChild" id="addChild">Add Child</a>
+		<a href="#add_form" type="button" class="btn btn-primary btn-large btn-custom new_group_btn" id="addChild">Add Child</a>
 	</div>
 	</div>
 
@@ -97,14 +99,14 @@
             <p>Please enter school and child's passcode here</p>
             <div class="forminput">
                 <label for="school">School</label>
-                <input type="text" id="school" value="" />
+                <input type="text" id="school" class="school" value="" />
             </div>
             <div class ="forminput2">
                 <label for="Your Child's Code">Passcode</label>
-                <input type="text" id="code" value="" />
+                <input type="text" id="code" class="code" value="" />
             </div>
             <div class="addWrapper">
-            <a href="#close" id="add" class="AddChild" > Add </a>
+            <a href="#close" type="button" class="btn btn-primary btn-large btn-custom new_group_btn" id="add"  > Add </a>
         </div>
             <div class="warningwrapper">
             <div class="warning">If you do not know your child's passcode please see a</div> 
@@ -115,13 +117,60 @@
             <a class="close" href="#close"></a>
         </div>
         <a href="#x" class="overlay" id="update_form"></a>
+          <div class="popupform">
+            <form class="updateform">
+            <h2>Update Your Information</h2>
+			Name: <input type="text" id="name_inp"><br>
+			Phone: <input type="text" id="phone_inp"><br>
+			Address: <input type="text" id="address_inp"><br>
+			Email: <input type="text" id="email_inp"><br>
+			<div class="buttonOverlay">
+			<a type="button" class="btn btn-primary btn-large btn-custom new_group_btn" id="save" href="#close"> Update </a>
+		</div>
+
+			</form>
+
+
+            <a class="close" href="#close"></a>
+        </div>
 
     <script type="text/javascript" src="external_js/jquery-1.9.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
 	$("#add").click(function(evt) {
 		$("#childa").css("display", "inline");
+		$("#school").val("");
+		$("#code").val("");
 });
+	$("#update_pop").click(function(evt) {
+		var elem = document.getElementById("name_inp");
+		var number = document.getElementById("username");
+		elem.value = number.textContent;
+		var elem = document.getElementById("phone_inp");
+		var number = document.getElementById("userphone");
+		elem.value = number.textContent;
+		var elem = document.getElementById("address_inp");
+		var number = document.getElementById("useraddress");
+		elem.value = number.textContent;
+		var elem = document.getElementById("email_inp");
+		var number = document.getElementById("useremail");
+		elem.value = number.textContent;
+	});
+	$("#save").click(function(evt) {
+		var elem = document.getElementById("name_inp");
+		var number = document.getElementById("username");
+		number.textContent = elem.value;
+		var elem = document.getElementById("phone_inp");
+		var number = document.getElementById("userphone");
+		number.textContent = elem.value;
+		var elem = document.getElementById("address_inp");
+		var number = document.getElementById("useraddress");
+		number.textContent = elem.value;
+		var elem = document.getElementById("email_inp");
+		var number = document.getElementById("useremail");
+		number.textContent = elem.value;
+	});
+
 
 	</script>
   </body>
