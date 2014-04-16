@@ -1,8 +1,3 @@
-// $(document).ready(function(){
-// 	var param_obj = getParams();
-// 	console.log("param_obj", param_obj);
-// });
-
 $(".cancel_btn").click(function(){
 						window.location.href = "groups.html";
 					});
@@ -10,6 +5,10 @@ $(".cancel_btn").click(function(){
 $(".request_invite_btn").click(function(){
 	window.location.href = "groups.html";
 });
+
+var params = getParams()
+$("#owner").html(params['name'].replace("-"," "))
+$("#dist").html(params['distance'] + " Miles")
 
 function getParams() {
 	var params = {}; 
@@ -22,4 +21,13 @@ function getParams() {
 	}
 	return params
 }
+
+
+$(".cancel_btn").click(function(){
+	window.location.href = "groups.html?name=" + params['name'] + "&bool=false";
+});
+
+$(".request_invite_btn").click(function(){
+	window.location.href = "groups.html?name=" + params['name'] + "&bool=true";
+});
 
