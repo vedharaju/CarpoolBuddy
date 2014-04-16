@@ -16,8 +16,6 @@
   <link href='http://fonts.googleapis.com/css?family=Signika&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
   <body style="padding-top:100px">
-	<script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
-<!-- This is a very simple parallax effect achieved by simple CSS 3 multiple backgrounds, made by http://twitter.com/msurguy -->
 <div class="carpool_buddy_div">
 		<h1 class="carpool_buddy_heading">Carpool Buddy</h1> 
 </div>
@@ -29,8 +27,8 @@
 			    	<h3 class="panel-title">Please sign in</h3>
 			 	</div>
 			  	<div class="panel-body">
-			    	<form accept-charset="UTF-8" role="form">
-                    <fieldset>
+			    	<!-- <form accept-charset="UTF-8" role="form">
+                    <fieldset> -->
 			    	  	<div class="form-group">
 			    		    <input class="form-control" placeholder="E-mail" name="email" type="text">
 			    		</div>
@@ -42,9 +40,9 @@
 			    	    		<input name="remember" type="checkbox" value="Remember Me"> Remember Me
 			    	    	</label>
 			    	    </div>
-			    		<input class="btn btn-lg btn-block login_btn" type="submit" value="Login">
-			    	</fieldset>
-			      	</form>
+			    		<input class="btn btn-lg btn-block " id="login" type="submit" value="Login">
+			    	<!-- </fieldset>
+			      	</form> -->
 			    </div>
 			</div>
 		</div>
@@ -52,6 +50,13 @@
 </div>
     <script type="text/javascript" src="external_js/jquery-1.9.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
+<!-- This is a very simple parallax effect achieved by simple CSS 3 multiple backgrounds, made by http://twitter.com/msurguy -->
     <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript">
+        $("#login").click(function(){
+          window.location.href = "profile.html";
+        })
+    </script>
   </body>
 </html>

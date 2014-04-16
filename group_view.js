@@ -1,4 +1,8 @@
-function getParams(name) {
+var params = getParams()
+$("#owner").html(params['name'].replace("-"," "))
+$("#dist").html(params['distance'] + " Miles")
+
+function getParams() {
 	var params = {}; 
 	var parts = (window.location.search || '').split(/[&?]/); 
 	for (var i = 0; i < parts.length; i++) { 
@@ -9,4 +13,13 @@ function getParams(name) {
 	}
 	return params
 }
+
+
+$(".cancel_btn").click(function(){
+	window.location.href = "groups.html";
+});
+
+$(".request_invite_btn").click(function(){
+	window.location.href = "groups.html";
+});
 
