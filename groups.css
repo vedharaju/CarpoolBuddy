@@ -97,6 +97,7 @@ body {
 .request_table{
 	 margin: 0px auto;
 	 margin-top: 20px;
+	 visibility: hidden;
 }
 
 .table_title{

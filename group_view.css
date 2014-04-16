@@ -24,6 +24,11 @@
 	margin-top: 30px;
 }
 
+.cancel_btn{
+	font-size: 20px;
+	margin-top: 20px;
+}
+
 .carpool_buddy_div {
 	background-color: white;
 	border: dashed black 2px;
