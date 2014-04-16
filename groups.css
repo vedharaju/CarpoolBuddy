@@ -1,7 +1,10 @@
 .accept_request_btn{
 	font-size: 15px;
 	padding: -5px;
+}
 
+body { 
+	padding-top: 70px; 
 }
 
 .btn-custom {
@@ -35,18 +38,6 @@
 	margin-top: -20px;
 }
 
-.carpool_buddy_heading{
-	font-size: 60px;
-	font-family: "Lobster";
-	color: hsl(292, 55%, 25%) ;
-	text-shadow:
-    -0.5px -0.5px 0 #a8a8a8,
-    0.5px -0.5px 0 #FFF,
-    -0.5px 0.5px 0 #a8a8a8,
-    0.5px 0.5px 0 #7e7e7e;
-}
-
-
 .existing_group_btn{
 	font-size: 20px;
 	margin-top: 10px;
@@ -72,7 +63,17 @@
 	color: white;
 	border: black solid 1px;
 	font-family: 'Signika';
+}
 
+.navbar_option{
+	font-family: 'Signika';
+	font-size: 17px;
+}
+
+.navbar_title{
+	font-family: "Lobster";
+	font-size: 30px;
+	color:#ffff7f;
 }
 
 .new_group_btn{
@@ -85,33 +86,28 @@
 	text-align: center;
 	padding-top: 10px;
 	font-family: 'Signika';
-
 }
 
 .no_group_heading{
 	text-align: center;
 	padding-top: 10px;
 	font-family: 'Signika';
-
 }
 
 .request_table{
 	 margin: 0px auto;
 	 margin-top: 20px;
-/*	 visibility: hidden;
-*/}
+}
 
 .table_title{
 	background-color: #d3d3d3;
 }
 
-td{
+td {
 	padding-left:40px;
 	padding-right: 40px;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	border:black solid 1px;
 	font-family: 'Signika';
 	font-size: 15px;
-
 }

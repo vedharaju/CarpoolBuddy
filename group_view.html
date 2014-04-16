@@ -15,11 +15,50 @@
 	</head>
 
 	<body>
-		<div class="entire_page">
-			<div class="carpool_buddy_div">
-				<h1 class="carpool_buddy_heading">Carpool Buddy</h1> 
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+			  <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand navbar_title" href="#">Carpool Buddy</a>
+			    </div>
+
+
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li class="active"><a class="navbar_option" href="#">Groups</a></li>
+			        <li><a class="navbar_option" href="#">Calendar</a></li>
+			        <li><a class="navbar_option" href="#">Forum</a></li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a class="navbar_option" href="#">Notifications  <span class="badge">42</span></a></li>
+			        <li class="dropdown">
+			          <a  class="navbar_option"href="#" class="dropdown-toggle" data-toggle="dropdown">Vedha Sayyaparaju <b class="caret"></b></a>
+			          <ul class="dropdown-menu">
+			            <li><a class="navbar_option" href="#">Profile</a></li>
+			            <li><a class="navbar_option" href="#">Settings</a></li>
+			            <li><a class="navbar_option" href="#">Help</a></li>
+			            <li class="divider"></li>
+			            <li><a class="navbar_option" href="#">Logout</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
 			</div>
-			<div class="row">
+		</nav>
+
+		<script type="text/javascript" src="external_js/jquery-1.9.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<div class="entire_page">
+			<div class="row" style="margin-top:70px">
 				<div class="col-md-6">
 					<h2 class="group_info_heading"> Group Information: </h2>
 					<div class="group_owner_div">
