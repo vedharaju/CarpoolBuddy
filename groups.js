@@ -3,6 +3,12 @@ $(".existing_group_btn").click(function(){
 	 	})
 
 var params = getParams()
+$(document).ready( function() {
+	if (params['bool'] == "true"){
+		console.log("here");
+		window.setTimeout(function(){changeNotification()}, 3000);
+	};
+});
 
 if (params['bool'] == "true"){
 	// make the table visible
@@ -27,13 +33,25 @@ if (params['bool'] == "true"){
 	var rowHtml =  "<tr>" +
 				   "<td class='bordered_cell'>" +  params['name'].replace("-", " ") + "</td>" +
 				   "<td class='bordered_cell'>" + today + "</td>" +
-				   "<td class='bordered_cell'>Pending</td>" +
-				   "<td class='unbordered_cell'><button type='button' class='btn btn-danger btn-large cancel_request_btn'>Cancel Request</button></td>" +
+				   "<td class='bordered_cell' id='status'>Pending</td>" +
+				   "<td class='unbordered_cell' id='groupButton'><button type='button' class='btn btn-danger btn-large cancel_request_btn'>Cancel Request</button></td>" +
 				   "</tr>";
 	// adds a row to the table. the negative one means it will add it to the end of the table
 	$(".request_table > tbody:last").append(rowHtml);
 } 
-
+$("#notificationTitle").click( function(){
+	$("#notificationNum").text("0");
+	$("#notificationNum").removeClass("alert-danger");
+});
+function changeNotification(){
+	console.log("hereeeee");
+	name = params["name"].replace("-"," ");
+	$("#groupNotification").text(name + " has accepted your group request");
+	$("#notificationNum").text("1");
+	$("#notificationNum").addClass("alert-danger");
+	$("#status").html("Accepted");
+	$("#groupButton").html('<button type="button" class="btn btn-success btn-large accept_request_btn">Confirm Group</button>');
+};
 function getParams() {
 	var params = {}; 
 	var parts = (window.location.search || '').split(/[&?]/); 
