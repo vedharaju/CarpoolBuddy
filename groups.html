@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Groups</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="groups.css" rel="stylesheet" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div class="carpool_buddy_div">
+		<h1 class="carpool_buddy_heading">Carpool Buddy</h1> 
+	</div>
+	<div class="row groups_row">
+		<div class="col-md-6">
+			<h2 class="group_request_heading">Your Requests:</h2>
+			<h4 class="no_group_heading">You currently have no groups. Please create or join one below.<h4>
+			<div class="row groups_inner_row">
+				<div class="col-md-3"></div>
+				<div class="col-md-3">
+					<button type="button" class="btn btn-primary btn-large new_group_btn">Create New Group</button>
+				</div>
+				<div class="col-md-3">
+					<button type="button" class="btn btn-primary btn-large existing_group_btn">Join Existing Group</button>
+				</div>
+				<div class="col-md-3"></div>
+
+			</div>
+			<table class="request_table">
+				<tr class="table_title">
+					<td>Group Owner</td>
+					<td>Date Sent</td>
+					<td>Status</td>
+					<td>Action</td>
+				</tr>
+				<tr>
+					<td>John Smith</td>
+					<td>November 8, 2014</td>
+					<td>Pending</td>
+					<td><button type="button" class="btn btn-danger btn-large cancel_request_btn">Cancel Request</button></td>
+				</tr>
+				<tr>
+					<td>Jane Smith</td>
+					<td>September 2, 2014</td>
+					<td>Accepted</td>
+					<td><button type="button" class="btn btn-success btn-large accept_request_btn">Confirm Group</button></td>
+				</tr>
+			</table>
+			
+		</div>
+		<div class="col-md-6">
+			<h2 class="group_feed_heading">Group Feed:</h2>
+			<h4 class="no_group_feed_heading">There are currently no posts in any of your groups.</h4>
+		</div>
+	</div>
+
+
+
+
+
+
+
+  </body>
+</html>
