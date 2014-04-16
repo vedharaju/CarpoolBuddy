@@ -24,7 +24,6 @@
 	margin-top: 30px;
 }
 
-
 .carpool_buddy_div {
 	background-color: white;
 	border: dashed black 2px;
@@ -32,26 +31,12 @@
 	margin-top: -20px;
 }
 
-.carpool_buddy_heading{
-	font-size: 60px;
-	color: hsl(292, 55%, 25%) ;
-	text-shadow:
-    -0.5px -0.5px 0 #a8a8a8,
-    0.5px -0.5px 0 #FFF,
-    -0.5px 0.5px 0 #a8a8a8,
-    0.5px 0.5px 0 #7e7e7e;
-   	font-family: 'Lobster';
-
-}
-
-
 .group_calendar_heading{
 	text-align: center;
 	border: black solid 1px;
 	color: white;
 	background-color: #330f53;
 	font-family: 'Signika';
-
 }
 
 .group_distance_div{
@@ -62,9 +47,7 @@
 	text-align: center;
 	color: #330f53;
 	text-decoration: underline;
-/*	background-color: #d3d3d3;
-*/	font-family: 'Signika';
-
+	font-family: 'Signika';
 }
 
 .group_info_heading{
@@ -88,9 +71,7 @@
 	text-align: center;
 	color: #330f53;
 	text-decoration: underline;
-/*	background-color: #d3d3d3;
-*/	font-family: 'Signika';
-
+	font-family: 'Signika';
 }
 
 .in_line{
@@ -98,6 +79,17 @@
 	font-family: 'Signika';
 	color: #7e7e7e;
 
+}
+
+.navbar_option{
+	font-family: 'Signika';
+	font-size: 17px;
+}
+
+.navbar_title{
+	font-family: "Lobster";
+	font-size: 30px;
+	color:#ffff7f;
 }
 
 .other_members{
@@ -112,9 +104,7 @@
 	text-align: center;
 	color: #330f53;
 	text-decoration: underline;
-/*	background-color: #d3d3d3;
-*/	font-family: 'Signika';
-
+	font-family: 'Signika';
 }
 
 .request_invite_btn{
