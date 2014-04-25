@@ -9,3 +9,10 @@ html, body, .row, .col-md-1, .col-md-5, .col-md-7, .col-md-11 { height: 100% }
 	width: 50%;
 	margin: 0 auto;
 }
+
+.nearby_groups_heading{
+	background-color: #7e7e7e;
+	color: white;
+	border: black solid 1px;
+	font-family: 'Signika';
+}
