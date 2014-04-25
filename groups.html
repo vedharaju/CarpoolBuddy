@@ -29,11 +29,6 @@
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-		        <li><a class="navbar_option" href="groups.html">Groups</a></li>
-		        <li><a class="navbar_option" href="#">Calendar</a></li>
-		        <li><a class="navbar_option" href="#">Forum</a></li>
-		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		        <li class="dropdown" id="notificationTitle">
 		          <a  class="navbar_option"href="#" class="dropdown-toggle" data-toggle="dropdown" > Notifications <span class="badge" id="notificationNum">0</span></a>
@@ -62,9 +57,44 @@
 
 	<div class="row groups_row">
 		<div class="col-md-6">
-			<h2 class="group_request_heading">Your Requests:</h2>
-			<h3 class="no_group_heading">You currently have no groups. Please create or join one below.<h3>
-			<div class="row groups_inner_row">
+			<h2 class="group_request_heading">Your Groups:</h2>
+			<!-- <h3 id="no_group" class="no_group_heading">You currently have no groups. Please create or join one below.<h3> -->
+			<div class="blockquote-box clearfix">
+                <div class="square pull-left">
+                    <img src="http://placehold.it/60/8e44ad/FFF&text=B" alt="" class="" />
+                </div>
+                <h4>
+                    Dallas Courtyard</h4>
+                <p>
+                    Eta Atolia, Jeffrey Warren, Vivek Dasari
+                </p>
+            </div>
+
+            <div class="blockquote-box blockquote-primary clearfix">
+                <div class="square pull-left">
+                    <span class="glyphicon glyphicon-music glyphicon-lg"></span>
+                </div>
+                <h4>
+                    Palm Meadows</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante. <a href="http://www.jquery2dotnet.com/search/label/jquery">jquery2dotnet</a>
+                </p>
+            </div>
+
+            <div class="blockquote-box blockquote-success clearfix">
+                <div class="square pull-left">
+                    <span class="glyphicon glyphicon-tree-conifer glyphicon-lg"></span>
+                </div>
+                <h4>
+                    Ocean Springs</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante.
+                </p>
+            </div>
+
+            <div class="row groups_inner_row">
 				<div class="col-md-3"></div>
 				<div class="col-md-3">
 					<button type="button" class="btn btn-primary btn-large btn-custom new_group_btn">Create New Group</button>
@@ -75,14 +105,51 @@
 				<div class="col-md-3"></div>
 
 			</div>
-			<table class="request_table">
+
+			<div class="blockquote-box blockquote-primary clearfix">
+                <div class="square pull-left">
+                    <span class="glyphicon glyphicon-music glyphicon-lg"></span>
+                </div>
+                <h4>
+                    Palm Meadows</h4>
+                    <button type="button" class="btn btn-default btn-sm">
+	                    <span class="glyphicon glyphicon-remove"></span>
+					</button>
+					<button type="button" class="btn btn-default btn-sm">
+	                    <span class="glyphicon glyphicon-ok"></span>
+					</button>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante. <a href="http://www.jquery2dotnet.com/search/label/jquery">jquery2dotnet</a>
+                </p>
+            </div>
+
+            <div class="blockquote-box blockquote-success clearfix">
+                <div class="square pull-left">
+                    <span class="glyphicon glyphicon-tree-conifer glyphicon-lg"></span>
+                </div>
+                <h4>
+                    Ocean Springs</h4>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-remove"></span>
+				</button>
+				<button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-ok"></span>
+				</button>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante.
+                </p>
+            </div>
+
+			<!-- <table class="request_table">
 				<tr class="table_title">
 					<td class="bordered_cell">Group Owner</td>
 					<td class="bordered_cell">Date Sent</td>
 					<td class="bordered_cell">Status</td>
 					<td class="unbordered_cell">Action</td>
 				</tr>
-				<!-- <tr>
+				<tr>
 					<td class="bordered_cell">John Smith</td>
 					<td class="bordered_cell">11/08/2014</td>
 					<td class="bordered_cell">Pending</td>
@@ -93,13 +160,16 @@
 					<td class="bordered_cell">09/02/2014</td>
 					<td class="bordered_cell">Accepted</td>
 					<td class="unbordered_cell"><button type="button" class="btn btn-success btn-large accept_request_btn">Confirm Group</button></td>
-				</tr> -->
-			</table>
+				</tr>
+			</table> -->
+
 			
 		</div>
-		<div class="col-md-6">
-			<h2 class="group_feed_heading">Group Feed:</h2>
-			<h3 class="no_group_feed_heading">There are currently no posts in any of your groups.</h3>
+		<div class="col-md-6" id="feed_div">
+			<h2 class="group_feed_heading">Your Calendar</h2>
+			<div class="calendar_outer">
+				<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=3aa3obbtlggrtgkcn81dut10kg%40group.calendar.google.com&amp;color=%23333333&amp;ctz=America%2FNew_York" style=" border:1 " width="650" height="600" frameborder="1" scrolling="no"></iframe>
+			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="groups.js"></script>

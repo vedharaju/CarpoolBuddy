@@ -24,6 +24,11 @@
 	margin-top: 30px;
 }
 
+.calendar_outer{
+	width: 50%;
+	margin: 0 auto;
+}
+
 .cancel_btn{
 	font-size: 20px;
 	margin-top: 20px;
@@ -120,3 +125,10 @@
 	text-align: center;
 }
 
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
+}
